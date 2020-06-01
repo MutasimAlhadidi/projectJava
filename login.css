@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #000000;
+}
+
+.label{
+    color: #ffffff;
+}
+
+.myInput{
+    -fx-border-color: #cccc00;
+    -fx-background-color: #00000000;
+    -fx-text-inner-color: #cccc00;
+}
+
+.login{
+    -fx-background-color: #cccc00;
+}
+
+.heading{
+    -fx-background-color: #000000;
+}
+
+.msg{
+    -fx-text-fill: red;
+}

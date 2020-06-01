@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.leftMenu{
+    -fx-background-color: #000000;
+}
+
+.btn{
+    -fx-background-color: #cccc00;
+}
+
+.btn1:hover{
+    -fx-background-color: #000000;
+    -fx-text-fill: #cccc00;
+    -fx-cursor: hand;
+}
+
+.table{
+    -fx-background-color: #00000000;
+    -fx-border-color: red;
+    border-width: 5px;
+    border-style: solid;
+}
