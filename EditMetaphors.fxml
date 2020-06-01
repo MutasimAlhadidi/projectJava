@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@style/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.EditMetaphorsController">
+   <children>
+      <Button id="login" fx:id="add" layoutX="383.0" layoutY="521.0" mnemonicParsing="false" onAction="#add" prefHeight="44.0" prefWidth="101.0" styleClass="login" stylesheets="@style/login.css" text="Add">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button id="login" fx:id="reset" layoutX="268.0" layoutY="521.0" mnemonicParsing="false" onAction="#reset" prefHeight="44.0" prefWidth="101.0" styleClass="login" stylesheets="@style/login.css" text="Reset">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button id="login" fx:id="close" layoutX="116.0" layoutY="521.0" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="86.0" styleClass="login" stylesheets="@style/login.css" text="Close">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" alignment="CENTER" layoutX="60.0" layoutY="28.0" prefHeight="70.0" prefWidth="483.0" styleClass="lable" stylesheets="@style/login.css" text="Add Metaphors" textFill="#cccc00">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="librarian" layoutX="115.0" layoutY="137.0" prefHeight="64.0" prefWidth="368.0" promptText="-- select --" style="-fx-text-fill: red;">
+         <styleClass>
+            <String fx:value="myInput" />
+            <String fx:value="combo-box" />
+         </styleClass></ComboBox>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="125.0" prefHeight="21.0" prefWidth="75.0" styleClass="heading" text="Librarian" textFill="#cccc00" />
+      <ComboBox fx:id="student" layoutX="115.0" layoutY="227.0" prefHeight="64.0" prefWidth="368.0" promptText="-- select --" style="-fx-text-fill: red;">
+         <styleClass>
+            <String fx:value="myInput" />
+            <String fx:value="combo-box" />
+         </styleClass></ComboBox>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="215.0" prefHeight="21.0" prefWidth="60.0" styleClass="heading" text="Student" textFill="#cccc00" />
+      <ComboBox fx:id="book" layoutX="115.0" layoutY="314.0" prefHeight="64.0" prefWidth="368.0" promptText="-- select --" style="-fx-text-fill: red;">
+         <styleClass>
+            <String fx:value="myInput" />
+            <String fx:value="combo-box" />
+         </styleClass></ComboBox>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="302.0" prefHeight="21.0" prefWidth="48.0" styleClass="heading" text="Book" textFill="#cccc00" />
+      <DatePicker fx:id="date" layoutX="116.0" layoutY="400.0" prefHeight="64.0" prefWidth="368.0" styleClass="myInput" />
+      <Label alignment="CENTER" layoutX="129.0" layoutY="390.0" prefHeight="21.0" prefWidth="48.0" styleClass="heading" text="Date" textFill="#cccc00" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="497.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.LoginController">
+    <stylesheets>
+        <URL value="@/library/view/style/login.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="148.0" layoutY="22.0" prefHeight="51.0" prefWidth="203.0" styleClass="lable" stylesheets="@style/login.css" text="Login" textFill="#cccc00">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="66.0" layoutY="113.0" prefHeight="64.0" prefWidth="368.0" styleClass="myInput" stylesheets="@style/login.css">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="65.0" layoutY="199.0" prefHeight="64.0" prefWidth="368.0" styleClass="myInput" stylesheets="@style/login.css">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </PasswordField>
+      <Button id="login" fx:id="login" layoutX="347.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" prefHeight="41.0" prefWidth="86.0" styleClass="login" stylesheets="@style/login.css" text="Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="65.0" layoutY="300.0" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="86.0" styleClass="close" text="Close">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="102.0" prefHeight="21.0" prefWidth="86.0" styleClass="heading" text="Username" textFill="#cccc00" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="188.0" prefHeight="21.0" prefWidth="75.0" styleClass="heading" text="Password" textFill="#cccc00" />
+      <Label fx:id="msg" layoutX="65.0" layoutY="268.0" prefHeight="21.0" prefWidth="368.0" styleClass="msg">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

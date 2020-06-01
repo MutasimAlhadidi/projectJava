@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="724.0" prefWidth="1099.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.BooksController">
+    <stylesheets>
+        <URL value="@/library/view/style/home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="724.0" prefWidth="200.0" styleClass="leftMenu" stylesheets="@style/home.css">
+         <children>
+            <Label fx:id="home" layoutY="1.0" onMouseClicked="#home" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/home.css" text="Home">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn1" />
+               </styleClass>
+            </Label>
+            <Label fx:id="books" layoutY="62.0" onMouseClicked="#books" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/home.css" text="Books" textFill="#cccc00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="students" layoutY="123.0" onMouseClicked="#students" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/home.css" text="Students">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn1" />
+               </styleClass>
+            </Label>
+            <Label fx:id="librarians" layoutY="184.0" onMouseClicked="#librarians" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/home.css" text="Librarians">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn1" />
+               </styleClass>
+            </Label>
+            <Label fx:id="metaphors" layoutY="245.0" onMouseClicked="#metaphors" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/home.css" text="Metaphors">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn1" />
+               </styleClass>
+            </Label>
+            <Label layoutY="306.0" prefHeight="418.0" prefWidth="200.0" styleClass="btn" stylesheets="@style/home.css">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="228.0" layoutY="22.0" prefHeight="60.0" prefWidth="200.0" text="Books">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="328.0" layoutY="81.0" startX="-100.0" />
+      <TableView fx:id="tableBooks" layoutX="228.0" layoutY="135.0" onMouseClicked="#select" prefHeight="475.0" prefWidth="561.0" styleClass="table" stylesheets="@style/home.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="85.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="231.0" text="Book name" />
+            <TableColumn fx:id="author" minWidth="9.0" prefWidth="238.0" text="Author name" />
+        </columns>
+      </TableView>
+      <Button id="login" fx:id="add" layoutX="888.0" layoutY="30.0" mnemonicParsing="false" onAction="#add" prefHeight="44.0" prefWidth="158.0" styleClass="login" stylesheets="@style/login.css" text="Add book">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
